@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>Reverse every word in sentence.</li>
+        <li>Sorting of array in descending order.</li>
+    </ul>
+
+
+    <script>
+        // reverse every word in sentence.
+        let sentence = "hi my name is balaji kalandar and I am looking for full stack job role";
+        console.log("original sentence: " + sentence);
+        let sent = sentence.split(" ");
+        for (let i = 0; i < sent.length; i++) {
+            let word = sent[i];
+            sent[i] = word.split("").reverse().join('');
+
+        }
+        console.log(sent.join(' '));
+
+        // Sorting of array in descending order
+        let arr = [5, 3, 1, 9, 4, 3, 23, 223];
+        arr = arr.sort((a, b) => b - a);
+        console.log("descending array " + arr)
+    </script>
+</body>
+
+</html>
